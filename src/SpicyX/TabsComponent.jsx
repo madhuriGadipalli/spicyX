@@ -11,15 +11,18 @@ import style from './style.css';
 export const TabsComponent = React.forwardRef((props, ref) => {
     const { Menu } = ref;
     const [tabs, updateTabs] = useState(['Breakfast', 'Meals', 'Snacks', 'Deserts', 'Drinks']);
-    const [active, setActive] = useState({});
+    const [active, setActive] = useState({
+        activeTab: 0
+    });
     useEffect(() => {
         props.fireRequestOnLoad('breakfast');
     }, [])
     const TabClickHandler = (tab, index) => {
         const data = tab.toLowerCase();
+
         setActive({
             ...active,
-            [index]: tab,
+            activeTab: index,
             tab: data
         });
         if (!props.tabsData[data]) props.fireRequestOnLoad(data)
@@ -30,7 +33,7 @@ export const TabsComponent = React.forwardRef((props, ref) => {
             <div ref={Menu}>
                 <ul className="tabs-header">
                     {tabs.map((tab, index) => {
-                        return <li id={active && active[index] == tab ? 'active' : null} className="tab-name" onClick={() => TabClickHandler(tab, index)}>
+                        return <li className={`tab-name ${active && active.activeTab == index ? 'active' : ''}`} onClick={() => TabClickHandler(tab, index)}>
                             <Link to={`/${tab}`}>{tab}</Link>
                         </li>
                     })}

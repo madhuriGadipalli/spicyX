@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { AboutUs } from './AboutUs';
+import { AboutUsComponent } from './AboutUs';
 let aboutUsData = {
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus aliquid, itaque illum assumenda repellendus dolorem, dolore numquam totam saepe, porro delectus, libero enim odio quo. Explicabo ex sapiente sit eligendi, facere voluptatum! Quia vero rerum sunt porro architecto corrupti eaque corporis eum, enim soluta, perferendis dignissimos, repellendus, beatae laboriosam.",
     list: [
@@ -43,8 +43,13 @@ let aboutUsData = {
     ]
 }
 
-describe('AboutUs', () => {
+const mockUseRef = (obj: any) => () => Object.defineProperty({}, 'current', {
+    get: () => obj,
+    set: () => { }
+})
+describe('AboutUsComponent', () => {
     it('should mount without errors', () => {
-        shallow(<AboutUs aboutUsData={aboutUsData} />);
+        const useRef = mockUseRef({ refFunction: jest.fn() })
+        shallow(<AboutUsComponent aboutUsData={aboutUsData} ref={useRef} />);
     });
 });

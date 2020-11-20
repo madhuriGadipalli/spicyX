@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import axios from "axios";
 import "./style.css";
-
 
 export const ContactUsForm = React.forwardRef((props, ref) => {
     const { ContactUs } = ref;
@@ -54,7 +52,7 @@ export const ContactUsForm = React.forwardRef((props, ref) => {
                                         </React.Fragment>
                                     );
                                 })}
-                            <input type="submit" onClick={e => handleFormSubmit(e)} value="Submit" />
+                            <input type="submit" onClick={e => handleFormSubmit(e)} value="Send Message" />
                         </form>
                     </div>
                 </div>
@@ -73,7 +71,6 @@ export const ContactUsForm = React.forwardRef((props, ref) => {
 }
 )
 
-//propTypes for the component
 ContactUsForm.propTypes = {
     config: PropTypes.object.isRequired
 };
