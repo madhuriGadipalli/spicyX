@@ -37,7 +37,7 @@ export const ContactUsForm = React.forwardRef((props, ref) => {
                                                     <label>{field.label}</label>
                                                     <input
                                                         type={field.type}
-                                                        className={field.klassName}
+                                                        className={field.className}
                                                         placeholder={field.placeholder}
                                                         value={field.name}
                                                         onChange={e => handleChange(e, field.fieldName)}
@@ -46,7 +46,7 @@ export const ContactUsForm = React.forwardRef((props, ref) => {
                                             ) : (
                                                     <React.Fragment>
                                                         <label>{field.label}</label>
-                                                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
+                                                        <textarea className={field.className} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
                                                     </React.Fragment>
                                                 )}
                                         </React.Fragment>

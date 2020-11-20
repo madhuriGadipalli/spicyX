@@ -39,8 +39,10 @@
 }
 .aboutus-container{
     display: flex;
-    margin: 0 6rem;
-    height: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
 }
 .imagesList{
     background: white;
@@ -213,10 +215,23 @@ input[type=submit] {
 textarea{
   height: 140px;
 }
-
-
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+@media(max-width:420px){
+    .aboutus-container, .contactUs{
+        display: inline-block;
+    }
+    .contactform-container{
+        width: 100%;
+    }
+    .address{
+        width: 100%;
+    }
+    .carousel .slide .legend{
+        position: absolute;
+    }
 }

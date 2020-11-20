@@ -7,21 +7,21 @@ const galleryData =
     [
         {
             imageUrl: "https://picsum.photos/700/400?img=1",
-            header: "The Real",
-            subheader: "Green foods",
-            Description: "blablabla"
+            header: "Welcome",
+            subheader: "To The SPice X",
+            Description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         },
         {
             imageUrl: "https://picsum.photos/700/400?img=2",
-            header: "The Real",
-            subheader: "Green foods",
-            Description: "blablabla"
+            header: "Delicious",
+            subheader: "Spicy masalas",
+            Description: "blaLorem ipsum dolor sit amet, consectetur adipisicing elit.labla"
         },
         {
             imageUrl: "https://picsum.photos/700/400?img=3",
             header: "The Real",
             subheader: "Green foods",
-            Description: "blablabla"
+            Description: "blaLorem ipsum dolor sit amet, consectetur adipisicing elit.labla"
         }
     ]
 
@@ -84,10 +84,10 @@ const contactData = {
         msg: ''
     },
     fieldsConfig: [
-        { id: 1, label: 'Your Name', fieldName: 'yourName', type: 'text', placeholder: 'Your Name', isRequired: true, klassName: 'first-name-field' },
-        { id: 2, label: 'Email Address', fieldName: 'email', type: 'email', placeholder: ' Your Email', isRequired: true, klassName: 'email-field' },
-        { id: 3, label: 'subject', fieldName: 'subject', type: 'text', placeholder: 'subject', isRequired: true, klassName: 'last-name-field' },
-        { id: 4, label: 'Message', fieldName: 'msg', type: 'textarea', placeholder: 'Write something.....', isRequired: true, klassName: 'message-field' }
+        { id: 1, label: 'Your Name', fieldName: 'yourName', type: 'text', placeholder: 'Your Name', isRequired: true, className: 'first-name-field' },
+        { id: 2, label: 'Email Address', fieldName: 'email', type: 'email', placeholder: ' Your Email', isRequired: true, className: 'email-field' },
+        { id: 3, label: 'subject', fieldName: 'subject', type: 'text', placeholder: 'subject', isRequired: true, className: 'last-name-field' },
+        { id: 4, label: 'Message', fieldName: 'msg', type: 'textarea', placeholder: 'Type your message', isRequired: true, className: 'message-field' }
     ]
 }
 

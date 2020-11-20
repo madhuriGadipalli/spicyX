@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { HeaderComponent } from './Header';
 import { ImageGallaryComponent } from './Gallery';
 import { AboutUsComponent } from './AboutUs';
 import { TabsComponent } from './TabsComponent';
@@ -13,9 +12,7 @@ export const SpicyXComponent = (props) => {
     const handleOnClick = (data) => {
         try {
             const Name = eval(data);
-            debugger;
             if (Name.current) {
-
                 Name.current.scrollIntoView({
                     behavior: "smooth",
                     block: "start",
