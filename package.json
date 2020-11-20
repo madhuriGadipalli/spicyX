@@ -1,14 +1,30 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "json-mock-api",
+  "version": "1.0.0",
   "private": true,
+  "description": "A simple JSON mock API",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "proxy": "http://localhost:9000/api",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "json-server": "^0.16.3",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "react-grid-system": "^7.1.1",
+    "react-redux": "^7.2.2",
+    "react-responsive-carousel": "^3.2.10",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -16,6 +32,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +62,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "connect-api-mocker": "^1.9.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "express": "^4.17.1"
   }
 }

@@ -1,0 +1,240 @@
+.parent-container{
+    font-family: auto;
+}
+
+.justify-content-center{
+    margin: 0 auto;
+   
+}
+.navbar-expand{
+    background-color:#00000094;
+}
+.navbar-expand .navbar-nav .nav-link{
+    color:white !important;
+    text-transform: uppercase;
+}
+.carousel .slide .legend{
+    background: none;
+    position: sticky;
+    margin-left: 0;
+}
+.carousel .slider-wrapper{
+    height:600px;
+}
+.heading{
+    font-family:"Tangerine",cursive;
+    font-size:100px;
+    font-weight:400;
+}
+.subheading{
+    font-size:70px;
+    text-transform: uppercase;
+}
+.desc{
+    font-size: 20px;
+    margin-bottom:30px;
+    margin-top:10px;
+    padding:0 30px;
+
+}
+.aboutus-container{
+    display: flex;
+    margin: 0 6rem;
+    height: 100%;
+}
+.imagesList{
+    background: white;
+}
+.carousel .slide{
+    background: white;
+}
+.left-container ul li:before {
+    content: "\f24d";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    color: #c1a35f;
+}
+.left-container ul{
+    list-style-type: none;
+}
+.left-container{
+    line-height :1.5rem;
+}
+.left-container ul li{
+    margin-bottom: 0.5rem;
+}
+.title-container{
+margin-top:1rem;
+   text-align: center;
+}
+.heading{
+    font-family: cursive;
+    font-size:3rem;
+    color:#c1a35f;
+}
+.subheading{
+    color:black;
+    margin-bottom: 5px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.menu-container{
+    display: flex;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    
+}
+.Image-container{
+    padding-right: 0.5rem;
+}
+.menu-title{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.menu-price{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color:#c1a35f;
+    font-weight: 700;
+    line-height: 1 ;
+}
+.menu-desc{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.tabs-header{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #c1a35f;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.tab-name{
+    display: inline-block;
+    float: none;
+    
+}
+.tabs-header>li{
+    float: left;
+    margin-bottom: -1px;
+}
+li a{
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    border-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 15px;
+    /* -webkit-transition: all 0.5s; */
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #c1a35f;
+    text-decoration: none;
+}
+.tabs-header>li>a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 15px;
+    display: block;
+}
+#active{
+    background-color: #FFF;
+    color: #c1a35f;
+    border-color: #c1a35f #c1a35f transparent;
+}
+
+
+
+* {box-sizing: border-box;}
+
+.contact-form {
+   margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+}
+.contactUs{
+    display: flex;
+}
+.address{
+    width:50%;
+    margin-left: 3rem;
+}
+.add-title{
+    color: #c1a35f;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.add-desc{
+    margin-bottom: 0.5rem;
+}
+.contactform-container {
+ width:50%;
+}
+.contactform-container p{
+  margin: 0;
+  text-align: left;
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #311c56;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+textarea{
+  height: 140px;
+}
+input[type=submit]:hover {
+    background-color: #140c23;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.sucsess  {
+  margin: 20px 0;
+  border: 1px solid green;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.error {
+  margin: 20px 0;
+  border: 1px solid red;
+  padding: 7px;
+  font-weight: bold;
+}

@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import thunkMiddleware from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { applyMiddleware, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { ConnectJsx } from './SpicyX/Container';
+import { CombineReducers } from './SpicyX/Reducers';
+const store = createStore(CombineReducers, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ConnectJsx />
+  </Provider>,
   document.getElementById('root')
 );
 
