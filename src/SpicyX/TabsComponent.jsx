@@ -31,6 +31,10 @@ export const TabsComponent = React.forwardRef((props, ref) => {
     return (
         <Router>
             <div ref={Menu}>
+                <div className="title-container">
+                    <div className="heading">{'Discover'}</div>
+                    <div className="subheading">{'Our Menu'}</div>
+                </div>
                 <ul className="tabs-header">
                     {tabs.map((tab, index) => {
                         return <li className={`tab-name ${active && active.activeTab == index ? 'active' : ''}`} onClick={() => TabClickHandler(tab, index)}>
